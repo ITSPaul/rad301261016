@@ -1,0 +1,7 @@
+﻿enable-migrations -ContextTypeName ppRadWeek62.Models.ApplicationDbContext -MigrationsDirectory "Authentication Migrations"
+add-migration –ConfigurationTypeName  ppRadWeek62.Migration.AuthenticationMigrations.Configuration "Initial"
+update-database –ConfigurationTypeName  ppRadWeek62.Migration.AuthenticationMigrations.Configuration
+
+enable-migrations -ContextTypeName ppRadWeek62.Models.ClubsModel.ClubsContext -MigrationsDirectory "Migration\ClubsMigrations"
+add-migration –ConfigurationTypeName  ppRadWeek62.Migration.AuthenticationMigrations.Configuration "Initial"
+update-database –ConfigurationTypeName  ppRadWeek62.Migration.ClubsMigrations.Configuration
